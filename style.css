@@ -1,0 +1,102 @@
+body{
+    background-color: #FFE15D;
+    margin: 0;
+}
+*{
+    text-transform: uppercase;
+}
+.reactionary{
+    margin-top: 7.75vh;
+}
+.red{
+    /* position: relative; */
+    padding: 3vh 0;
+    background-color: #F94A29;
+    margin-bottom: 1.75vh;
+}
+p, h1, h2, a{
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    color: #b16c04;
+}
+p{
+    color: #bd7100;
+}
+a{
+    font-size: 15px;
+    color: rgb(13, 34, 218);
+    text-decoration: none;
+    margin: 0 35%;
+    padding: 1px 6px;
+}
+a:hover{
+    color: red;
+}
+.result{
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    background-color: #DC3535;
+    color: antiquewhite;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    /* width: 170px; */
+}
+button:hover{
+    background-color: #B01E68;
+    color: antiquewhite;
+}
+.header{
+    margin: 10px 0;
+}
+.btn-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    /* margin: 100; */
+}
+.btn-group img{
+    width: 20vw;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+.btn-group .piggy{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.btn-group .piggy img{
+
+}
+button{
+    padding: 9px 20px;
+}
+.hidden{
+    display: none;
+}
+.hidden h2{
+    color: #F49D1A;
+}
+.hide{
+    display: none !important;
+}
+.result-box{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.react, .react:hover{
+    background-color: transparent;
+}
+.react{
+    color: blue;
+    font-size: 5px;
+    font-family: cursive;
+    margin: 0 42%;
+}
+.react:hover{
+    color: red;
+}
