@@ -1,42 +1,72 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body {
     background-color: #FFE15D;
     margin: 0;
+    animation: fadein 2s;
 }
-*{
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+        margin-top: 50px
+    }
+
+    to {
+        opacity: 1;
+        margin-top: unset
+    }
+}
+
+div {
+    font-family: 'Tilt Neon', cursive;
+}
+
+* {
     text-transform: uppercase;
 }
-.reactionary{
+
+.reactionary {
     margin-top: 7.75vh;
 }
-.red{
+
+.red {
     /* position: relative; */
     padding: 3vh 0;
     background-color: #F94A29;
     margin-bottom: 1.75vh;
 }
-p, h1, h2, a{
+
+p,
+h1,
+h2,
+a {
     text-align: center;
-    font-family: cursive;
     font-size: 30px;
     color: #b16c04;
 }
-p{
+
+p {
     color: #bd7100;
 }
-a{
+
+a {
     font-size: 15px;
     color: rgb(13, 34, 218);
     text-decoration: none;
     margin: 0 35%;
     padding: 1px 6px;
 }
-a:hover{
+
+a:hover {
     color: red;
 }
-.result{
+
+.result {
     text-align: center;
 }
-button{
+
+button {
     font-size: 20px;
     background-color: #DC3535;
     color: antiquewhite;
@@ -44,59 +74,88 @@ button{
     border-radius: 15px;
     /* width: 170px; */
 }
-button:hover{
-    background-color: #B01E68;
-    color: antiquewhite;
-}
-.header{
+
+.header {
     margin: 10px 0;
 }
-.btn-group{
+
+.btn-group {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
     /* margin: 100; */
 }
-.btn-group img{
-    width: 20vw;
-    margin: 0 10px;
+
+@media all and (max-width:900px){
+    .btn-group{
+        flex-direction: column;
+    }
+}
+
+@media all and (min-width:900px){
+    .btn-group{
+        justify-content: space-around;
+    }
+}
+
+.btn-group img {
     margin-bottom: 10px;
 }
-.btn-group .piggy{
+
+.piggy {
     text-align: center;
     display: flex;
     flex-direction: column;
+    width:300px;
+    margin-bottom: 50px;
+    justify-content: center;
 }
-.btn-group .piggy img{
 
-}
-button{
+button {
     padding: 9px 20px;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.hidden h2{
+
+.hidden h2 {
     color: #F49D1A;
 }
-.hide{
+
+.hide {
     display: none !important;
 }
-.result-box{
+
+.result-box {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
-.react, .react:hover{
+
+.react,
+.react:hover {
     background-color: transparent;
 }
-.react{
+
+.react {
     color: blue;
     font-size: 5px;
-    font-family: cursive;
     margin: 0 42%;
 }
-.react:hover{
+
+.react:hover {
     color: red;
+}
+
+.piggies {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+button{
+    font-family: inherit;
+}
+
+.piggies:active {
+    transform: scale(0.9);
 }
